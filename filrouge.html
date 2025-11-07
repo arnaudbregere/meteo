@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Météo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="meteo.css">
+
+</head>
+<body>
+  <div class="meteo-container">
+    <h1 class="meteo-title">Météo</h1>
+
+    <form action="#" method="get">
+      <label for="city">Saisir une localisation :</label>
+      <input type="text" id="city" name="city" placeholder="Rechercher une ville...">
+      <button type="submit" class="search">Rechercher</button>
+    </form>
+
+      <ul>
+      <li>
+        <img src="sun.svg" alt="Ensoleillé" width="50" height="50" class="meteo-icon"/>
+        <div class="meteo-content">
+          <p class="meteo-city">Cupertino</p>
+          <p class="meteo-temperature">70°</p>
+        </div>
+        <button class="meteo-favorite active">
+           <img src="favorite.svg" alt="Favori" width="30" height="30" class="meteo-favorite"/>
+        </button>
+      </li>
+
+      <li>
+        <img src="cloud.svg" alt="Nuageux" width="50" height="50" class="meteo-icon"/>
+        <div class="meteo-content">
+          <p class="meteo-city">Miami</p>
+          <p class="meteo-temperature">87°</p>
+        </div>
+        <button class="meteo-favorite">
+           <img src="favorite.svg" alt="Favori" width="30" height="30" class="meteo-favorite"/>
+        </button>
+      </li>
+
+      <li>
+        <img src="rain.svg" alt="Pluvieux" width="50" height="50" class="meteo-icon"/>
+        <div class="meteo-content">
+          <p class="meteo-city">London</p>
+          <p class="meteo-temperature">67°</p>
+        </div>
+        <button class="meteo-favorite">
+           <img src="favorite.svg" alt="Favori" width="30" height="30" class="meteo-favorite"/>
+        </button>
+      </li>
+
+      <li>
+        <img src="cloud.svg" alt="Nuageux" width="50" height="50" class="meteo-icon"/>
+        <div class="meteo-content">
+          <p class="meteo-city">Seattle</p>
+          <p class="meteo-temperature">72°</p>
+        </div>
+          <button class="meteo-favorite">
+           <img src="favorite.svg" alt="Favori" width="30" height="30" class="meteo-favorite"/>
+        </button>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

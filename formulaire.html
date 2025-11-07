@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <h1>Introduction au formulaire HTML</h1>
+    <form action="destination.html" method="post">
+        <fieldset>
+            <legend>Fiche de renseignement</legend>
+            <label for="prenom">prenom :</label><br/>
+            <input type="text" id="prenom" name="prenom" value="" required><br/>
+
+            <label for="nom">nom :</label><br/>
+            <input type="text" id="nom" name="nom" value="" required /><br/>
+
+            <label for="email">email :</label><br/>
+            <input type="email" id="email" name="email" value="" required /><br/>
+
+            <label for="date">date de naissance :</label><br/>
+            <input type="date" id="date" name="date" value=""><br/>
+            <label for="message">Votre message :</label><br/>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Votre message ici..."></textarea><br/>
+        </fieldset>
+        <br/><br/>
+        <fieldset>
+            <legend>Informations complémentaires</legend>
+                   <label for="cgv">Accepte les CGV</label>
+                    <input type="checkbox" id="cgv" name="cgv" value="newsletter" /> <br/>
+     
+    
+                    <label for="sombre">Couleur sombre</label>
+                    <input type="radio" id="sombre" name="couleur" value="sombre" checked />
+
+                    <label for="clair">Couleur claire</label>   
+                    <input type="radio" id="clair" name="couleur" value="clair" />
+                    <br/>
+                    <label for="pays">Pays :</label>
+                    <select name="pays" id="pays" multiple>
+                        <option value="france">France</option>
+                        <option value="belgique">Belgique</option>
+                        <option value="suisse">Suisse</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                    <br/>   
+                    <label for="departement">Département :</label>
+                    <select name="departement" id="departement">
+                        <optgroup label="Région Auvergne-Rhône-Alpes">
+                            <option value="01">Ain</option>
+                            <option value="02">Aisne</option>
+                            <option value="03">Allier</option>
+                            <option value="04">Alpes-de-Haute-Provence</option>
+                        </optgroup>
+                    </select>
+
+
+                    <label for="langues">Langues parlées :</label>
+                    <input list="langues" name="leslangues" id="leslangues" />
+                    <dataList id="langues">
+                        <option value="français"></option>  
+                        <option value="anglais"></option>
+                        <option value="espagnol"></option>
+                        <option value="allemand"></option>
+                        <option value="italien"></option>
+                    </dataList>
+                </fieldset>
+
+        <input type="submit" id="submitButton" value="Soumettre">
+    </form>
+</body>
+</html>
